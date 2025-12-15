@@ -275,7 +275,7 @@ self.train_dataloader = StatefulDataLoader(
 
 ### Task-specific Advantage Estimation
 
-We adopt a task-aware approach to compute the reward standard deviation when estimating advantage. Specifically, for the $i$-th response of the policy model, we modify the group-level standard deviation to the standard deviation of rewards from all samples belonging to the same task within the current training batch $\mathcal{B}^{\text{task}}$:
+We adopt a task-aware approach to compute the reward standard deviation when estimating advantage. Specifically, for the $i$-th response of the policy, we modify the group-level standard deviation to the standard deviation of rewards from all samples belonging to the same task within the current training batch $\mathcal{B}^{\text{task}}$:
 
 
 $$A_{i}^{\text{task}} = \frac{r_{i}^{\text{task}} - \text{mean}(\{r_{k}^{\text{task}}\}_{k=1}^{G})}{\textcolor{red}{\text{std}(r^{\text{task}} | r^{\text{task}} \in \mathcal{B}^{\text{task}})}}, \quad \text{task} \in \{\text{mc, qa, niah, ...}\}$$
@@ -326,9 +326,8 @@ def compute_grpo_task_norm_outcome_advantage(
 
 ### AEPO
 
-Adaptive entropy-controlled policy optimization (AEPO) algorithm maintains an optimal balance between exploration (increase entropy, with negative gradient) and exploitation (decrease entropy, without negative gradient), enabling scaling RL training to a larger number of steps without degradation. 
+The Adaptive Entropy-controlled Policy Optimization (AEPO) algorithm maintains an optimal balance between exploration (increasing entropy via negative gradients) and exploitation (decreasing entropy without negative gradients). Please add the following implementation after the advantage computation step in your trainer:
 
-Add the following code implementation after computing advantage in your trainer:
 
 ```python
 kept_indices = []
@@ -345,11 +344,6 @@ if aepo_entropy_low < metrics["actor/entropy_loss"] < aepo_entropy_high:
     advantage_mask = advantage_mask & (rewards > 0)
     keep_mask &= advantage_mask
     metrics[f"train/samples_kept_after_ngc"] = advantage_mask.sum().item()
-
-    if final_kept_count < initial_size:
-        # Create a mask for samples to be discarded (where keep_mask is False)
-        discard_mask = ~keep_mask
-        batch.batch["advantages"][discard_mask] = 0
     
     kept_indices = torch.where(keep_mask)[0].tolist()
     if len(kept_indices) % self.actor_rollout_wg.world_size != 0:
