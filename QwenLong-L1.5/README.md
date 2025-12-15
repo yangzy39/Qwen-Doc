@@ -75,8 +75,8 @@ conda activate qwenlongl1_5
 # Install requirements
 pip3 install -r requirements.txt
 
-# Install verl, we use the 0.2 version of verl
-git clone --branch v0.2 https://github.com/volcengine/verl.git
+# Install verl, we use the 0.4 version of verl
+git clone --branch v0.4 https://github.com/volcengine/verl.git
 cd verl
 pip3 install -e .
 ```
