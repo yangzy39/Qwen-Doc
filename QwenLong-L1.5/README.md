@@ -13,9 +13,9 @@ QwenLong-L1.5: Post-Training Recipe for Long-Context Reasoning and Memory Manage
 
 <!-- **Authors:** -->
 
-_**Weizhou Shen, Ziyi Yang, Chenliang Li, Zhiyuan Lu, Miao Peng, Huashan Sun,**_
+_**Weizhou Shen\*, Ziyi Yang\*, Chenliang Li\*, Zhiyuan Lu, Miao Peng, Huashan Sun,**_
 _**Yingcheng Shi, Shengyi Liao, Shaopeng Lai, Bo Zhang,**_
-_**Dayiheng Liu, Fei Huang, Jingren Zhou, Ming Yan**_
+_**Dayiheng Liu, Fei Huang, Jingren Zhou, Ming Yan<sup>†</sup>**_
 
 
 <!-- **Affiliations:** -->
