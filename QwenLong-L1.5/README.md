@@ -35,7 +35,7 @@ _Tongyi Lab, Alibaba Group_
 - **Dec 15, 2025:** 🔥 We release [🤗 QwenLong-L1.5-30B-A3B](https://huggingface.co/Tongyi-Zhiwen/QwenLong-L1.5-30B-A3B), built upon Qwen3-30B-A3B-Thinking. It features a complete post-training recipe for long-context reasoning and memory management, achieving performance comparable to top-tier models like GPT-5 and Gemini-2.5-Pro.
 
 <!-- - **[Date], 2025:** 🔥 We release [🤗 QwenLong-L1.5-30B](https://huggingface.co/Tongyi-Zhiwen/QwenLong-L1.5-30B),  -->
-- **Dec 15, 2025:** 🔥 We release the [technical report](./paper/QwenLong_1_5.pdf) of QwenLong-L1.5.
+- **Dec 15, 2025:** 🔥 We release the [technical report](https://arxiv.org/pdf/2512.12967) of QwenLong-L1.5.
 
 
 ## 📚 Introduction
