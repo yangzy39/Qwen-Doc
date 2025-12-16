@@ -6,7 +6,7 @@
 QwenLong-L1.5: Post-Training Recipe for Long-Context Reasoning and Memory Management
 -----------------------------
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-<!-- [![arXiv](https://img.shields.io/badge/arXiv-PAPER_ID-b31b1b.svg)](https://arxiv.org/abs/PAPER_ID) -->
+[![arXiv](https://img.shields.io/badge/arXiv-2512.12967-b31b1b.svg)](https://arxiv.org/pdf/2512.12967)
 [![GitHub](https://img.shields.io/badge/GitHub-QwenLongL1.5-4b32c3?logo=github)](https://github.com/Tongyi-Zhiwen/Qwen-Doc/tree/main/QwenLong-L1.5)
 [![ModelScope](https://img.shields.io/badge/🤖%20ModelScope-purple)](https://modelscope.cn/models/iic/QwenLong-L1.5-30B-A3B)
 [![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-yellow)](https://huggingface.co/Tongyi-Zhiwen/QwenLong-L1.5-30B)
