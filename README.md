@@ -61,9 +61,10 @@ If you find our work helpful in your research, please consider citing our papers
 
 ```bibtex
 @article{shen2025qwenlongl15,
-  title={QwenLong-L1.5: Post-Training Recipe for Long-Context Reasoning and Memory Management},
-  author={Weizhou Shen, Ziyi Yang, Chenliang Li, Zhiyuan Lu, Miao Peng, Huashan Sun, Yingcheng Shi, Shengyi Liao, Shaopeng Lai, Bo Zhang, Dayiheng Liu, Fei Huang, Jingren Zhou, Ming Yan},
-  year={2025}
+      title={QwenLong-L1.5: Post-Training Recipe for Long-Context Reasoning and Memory Management}, 
+      author={Weizhou Shen and Ziyi Yang and Chenliang Li and Zhiyuan Lu and Miao Peng and Huashan Sun and Yingcheng Shi and Shengyi Liao and Shaopeng Lai and Bo Zhang and Dayiheng Liu and Fei Huang and Jingren Zhou and Ming Yan},
+      journal={arXiv preprint arXiv:2512.12967},
+      year={2025}
 }
 ```
 
